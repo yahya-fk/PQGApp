@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contrôleur PQG</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body class="background-shapes" style="background-color: #f1f4f6;">
+<section class="background-radial-gradient overflow-hidden">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      position: relative;
+      color: #333; /* Dark text color */
+      height: 100vh; /* Full viewport height */
+    }
+
+    .background-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #007bff; /* Blue color for links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      color: #ffffff;
+  }
+  
+  .loading-spinner {
+    color: #243882;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 15px;
+      animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
+  </style>
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: #007bff;">
+          PQG CONTROLLER <br />
+          <span style="color: #0056b3;">APP</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: #555;">
+          Cette application a été élaborée afin d'évaluer et mesurer l'efficacité du PQG, de surveiller ses performances et d'en améliorer la qualité en mettant à disposition des statistiques et des graphes. 
+          Son objectif prédominant consiste à faciliter l'identification des défauts de fabrication, contribuant ainsi à la réduction de leur fréquence. 
+          Cette analyse de données et la présentation de chiffres pertinents sont au cœur de cette démarche.  </p>
+      </div>
+     
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong" style="background-color: #007bff;"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-light text-dark">
+          <div class="card-body px-4 py-4 px-md-5">
+            <form onsubmit="spinActivated()" method="POST">
+              {% csrf_token %}
+              <h1 class="text title text-dark p-3 text-center fw-bold">INSCRIPTION</h1>
+              {% if form.errors %}
+              <div class="alert alert-danger mt-4">
+                  <strong>Erreurs dans le formulaire :</strong>
+                  <ul>
+                      {% for field in form %}
+                          {% for error in field.errors %}
+                              <li>{{ field.label }} : {{ error }}</li>
+                          {% endfor %}
+                      {% endfor %}
+                  </ul>
+              </div>
+          {% endif %}
+              <div class="row">
+                  <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                          {{ form.first_name }}
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                          {{ form.last_name }}
+                      </div>
+                  </div>
+              </div>
+              <div class="form-outline mb-4">
+                  {{ form.username }}
+              </div>
+              <div class="form-outline mb-4">
+                  {{ form.email }}
+              </div>
+              <div class="form-outline mb-4">
+                  {{ form.password1 }}
+              </div>
+              <div class="form-outline mb-4">
+                  {{ form.password2 }}
+              </div>
+              <div class="text-center">
+                  <a href="{% url 'signin' %}" class="url text-primary">Vous avez déjà un compte ?</a>
+                  <hr>
+                  <button type="submit" class="btn btn-primary w-100 btn-block mb-4">
+                      S'inscrire
+                  </button>
+              </div>
+          </form>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="loading" class="loading-overlay">
+  <h4>Chargement des données ...</h4><br>
+  <div class=" loading-spinner"></div>
+<script src="{% static 'App1/main.js' %}"></script>
+
+</body>
+</html>

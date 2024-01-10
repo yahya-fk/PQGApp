@@ -49,28 +49,20 @@ L'architecture du système doit être conçue pour permettre une évolutivité f
 1. # <a name="_toc148123382"></a>**CONCEPTION**
 Pour répondre à ces besoins, nous avons envisagé de réaliser les diagrammes suivants, en utilisant UML.
 1. ## <a name="_toc148123383"></a>**Diagramme de classe**
-![Une image contenant texte, diagramme, Parallèle, ligne
-
-Description générée automatiquement](Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.001.png)
+![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.001.png)
 
 <a name="_toc148122988"></a>**Figure 49 Diagramme de classe PQG Controller**
 1. ## **<a name="_toc148123384"></a>DIAGRAMME DE CAS D’UTILISATION**
-![Une image contenant texte, diagramme, ligne, dessin
-
-Description générée automatiquement](Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.002.png)
+![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.002.png)
 
 <a name="_toc148122989"></a>**Figure 50 Diagramme de cas D'utilisation de PQG Controller**
 1. ## <a name="_toc148123385"></a>**DIAGRAMMES DE SEQUENCE**
    1. ### <a name="_toc148123386"></a>**DS  AUJOURD’HUI / HIER** 
-![Une image contenant texte, capture d’écran, nombre, Parallèle
-
-Description générée automatiquement](Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.003.png)
+![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.003.png)
 
 <a name="_toc148122990"></a>**Figure 51 DS Aujourd’hui / Hier PQG Controller**
 1. ### <a name="_toc148123387"></a>**DS  Paramètre**
-![Une image contenant texte, Parallèle, reçu, document
-
-Description générée automatiquement](Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.004.jpeg)
+![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.004.jpeg)
 
 <a name="_toc148122991"></a>**Figure 52 DS paramètre PQG Controller**
 ### <a name="_toc148123388"></a>**N.B**

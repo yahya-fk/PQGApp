@@ -1,6 +1,19 @@
 Chapitre 3 : Contexte général du projet PQG CONTROLLER
 
 
+1. # <a name="_toc148123400"></a>**PQG CONTROLLER VERSION DEMO**
+Cette version n'exécute aucune action réelle, mais elle vous permettra d'explorer les interfaces et certaines fonctionnalités de l'application.
+
+Lien :    [PQG Controller (yahya-fk.github.io)](https://yahya-fk.github.io/PQG-APP/)
+
+![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.022.png)
+
+<a name="_toc148122997"></a>**Figure 58 Code QR PQG Controller DEMO**
+
+
+
+
+
 # <a name="_toc148123372"></a>**INTRODUCTION**
 L'avènement de la technologie a engendré une transformation fondamentale dans la manière dont les entreprises abordent l'amélioration de la qualité de leur production. Au cœur de cette révolution, la digitalisation des Plans de Qualité Générale (PQG) s'est affirmée comme un pilier essentiel d'un projet d'envergure dirigé par le Responsable général du montage M. **Mohammed BOUHAOUI**, au sein de **STELLANTIS** Kenitra. L'objectif de ce projet ambitieux est double : d'une part, il vise à numériser les PQG pour les rendre plus accessibles et plus efficaces, et d'autre part, il vise à améliorer la qualité de la production en filtrant les points de vérification moins pertinents.
 
@@ -221,11 +234,4 @@ df.to\_sql('VIS', con=engine, if\_exists='append', index=True)
 Ce processus automatisé de web scraping et de gestion des données a permis à l'équipe de la transformation numérique d'accéder aux informations cruciales de l'application responsable des bases de données, garantissant ainsi une utilisation efficace de ces données pour le besoins de PQG Controller et opérationnels de l'usine **STELLANTIS**.
 1. # <a name="_toc148123399"></a>**CONCLUSION**
 En conclusion, ce projet a abouti à la création d'une application de contrôle de la qualité des véhicules qui allie une interface utilisateur conviviale, des fonctionnalités de back-end solides et une gestion efficace des données. Le front-end offre des formulaires interactifs, des graphiques et des tableaux pour une visualisation claire des données, tandis que le back-end assure la sécurité des données avec des vérifications de mots de passe et une manipulation de données efficace. Cette application vise à améliorer le contrôle de la qualité des véhicules en offrant des outils flexibles pour le suivi, l'analyse et la personnalisation, contribuant ainsi à l'amélioration continue de la qualité des produits dans l'industrie automobile.
-1. # <a name="_toc148123400"></a>**PQG CONTROLLER VERSION DEMO**
-Cette version n'exécute aucune action réelle, mais elle vous permettra d'explorer les interfaces et certaines fonctionnalités de l'application.
 
-Lien :    [PQG Controller (yahya-fk.github.io)](https://yahya-fk.github.io/PQG-APP/)
-
-![](Readme/Aspose.Words.8b2f661c-4da3-49d0-b99e-c638213380cd.022.png)
-
-<a name="_toc148122997"></a>**Figure 58 Code QR PQG Controller DEMO**
